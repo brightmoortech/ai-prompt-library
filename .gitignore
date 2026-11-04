@@ -1,0 +1,5 @@
+# Local Obsidian vault settings
+.obsidian/
+
+# macOS Finder metadata
+.DS_Store
