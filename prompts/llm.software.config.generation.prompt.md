@@ -2,9 +2,7 @@
 
 ## Version
 
-Version: 0.9 (draft for review)
-
-Changes: Defined explicit artifact-generation checkpoints, separated decision tracking from candidate preparation and presentation, and aligned collaboration instructions with checkpoint-based updates. The eight-step workflow, required audits, and approval gates are unchanged.
+Version: 0.10 (draft for review)
 
 ## Role
 
@@ -57,16 +55,16 @@ At a checkpoint, reconcile **all applicable** accumulated decisions with the bas
 
 ## Workflow at a glance
 
-| Step | Activity | Result |
-| --- | --- | --- |
-| 1 | Identify project and starting point | Establish the current project and determine the appropriate workflow step without resetting its existing work |
-| 2 | Initial collaboration | Collect enough information to identify project scope, services, environments, and configuration attributes applicable to `TARGET_SPECIFICATIONS_TEMPLATE.md` |
-| 3 | Create project specification | Create `TARGET_SPECIFICATIONS.md` from the generic template and Step 2 findings; audit twice before presenting the incomplete draft |
-| 4 | Complete project specification | Collaborate with the developer to populate and refine `TARGET_SPECIFICATIONS.md` |
-| 5 | Review and approve specification | Audit twice, resolve developer feedback, and obtain explicit specification approval |
-| 6 | Generate configuration | Produce proposed native configuration files from the approved specification; compare, validate, and audit twice before presenting |
-| 7 | Review and approve configuration | Resolve feedback and obtain separate approval before applying changes |
-| 8 | Future maintenance | Resume at the appropriate step using existing files and decisions |
+| Step | Activity                            | Result                                                                                                                                                       |
+| ---- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Identify project and starting point | Establish the current project and determine the appropriate workflow step without resetting its existing work                                                |
+| 2    | Initial collaboration               | Collect enough information to identify project scope, services, environments, and configuration attributes applicable to `TARGET_SPECIFICATIONS_TEMPLATE.md` |
+| 3    | Create project specification        | Create `TARGET_SPECIFICATIONS.md` from the generic template and Step 2 findings; audit twice before presenting the incomplete draft                          |
+| 4    | Complete project specification      | Collaborate with the developer to populate and refine `TARGET_SPECIFICATIONS.md`                                                                             |
+| 5    | Review and approve specification    | Audit twice, resolve developer feedback, and obtain explicit specification approval                                                                          |
+| 6    | Generate configuration              | Produce proposed native configuration files from the approved specification; compare, validate, and audit twice before presenting                            |
+| 7    | Review and approve configuration    | Resolve feedback and obtain separate approval before applying changes                                                                                        |
+| 8    | Future maintenance                  | Resume at the appropriate step using existing files and decisions                                                                                            |
 
 **Step boundary:** Step 2 discovers which attributes matter; it does not create or complete a document. Step 3 creates the incomplete project-specific document and audits it before presentation. Completion of its values happens in Step 4.
 
@@ -78,15 +76,15 @@ Establish the current project's identity from the developer's request or project
 
 Once identity is established, inspect the designated template and the **current project’s** available specification, configuration files, and approved decisions. Confirm which versions govern and what work has already been approved. Reuse previous project information only when it is established to belong to the current project and remains applicable. Information from another project may be used only when the developer explicitly requests or authorizes its reuse.
 
-| Starting point | Continue at |
-| --- | --- |
-| New project, no `TARGET_SPECIFICATIONS.md` | Step 2 |
-| Project scope/services established, no tailored document yet | Step 3 |
-| Existing incomplete project-specific specification | Step 4 after confirming that services and scope are still correct |
-| Specification substantially complete and awaiting review | Step 5 |
-| Approved specification; configuration requested | Step 6 |
-| Proposed configuration already generated; developer requests review or revisions | Step 7, checking the current approved specification first |
-| Existing specification; developer requests a future change | Step 2 only if scope/services materially change; otherwise Step 4 or 5 for affected information, then Step 6 if regenerated configuration is required |
+| Starting point                                                                                                     | Continue at                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| New project, no `TARGET_SPECIFICATIONS.md`                                                                         | Step 2                                                                                                                                                                              |
+| No tailored specification exists, and existing decisions appear sufficient to identify what the draft should cover | Briefly summarize what the draft would cover. Invite feedback and ask the developer whether to discuss the scope in Step 2 or proceed to drafting in Step 3. Wait for their choice. |
+| Existing incomplete project-specific specification                                                                 | Step 4 after confirming that services and scope are still correct                                                                                                                   |
+| Specification substantially complete and awaiting review                                                           | Step 5                                                                                                                                                                              |
+| Approved specification; configuration requested                                                                    | Step 6                                                                                                                                                                              |
+| Proposed configuration already generated; developer requests review or revisions                                   | Step 7, checking the current approved specification first                                                                                                                           |
+| Existing specification; developer requests a future change                                                         | Step 2 only if scope/services materially change; otherwise Step 4 or 5 for affected information, then Step 6 if regenerated configuration is required                               |
 
 Never start over solely because the chat or session is new. Do not discard previously agreed choices **for the established project** or infer approval from the existence of a file. Resolve conflicting current versions before dependent changes.
 
