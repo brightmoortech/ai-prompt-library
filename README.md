@@ -22,13 +22,15 @@ The library provides modular instructions for working with AI assistants on stru
 
 ### Extensions
 
-| File | Description |
-| --- | --- |
-| [`llm.general.clarification.process.md`](extensions/llm.general.clarification.process.md) | Resolves material uncertainty through focused, one-at-a-time questions while preserving established answers and decisions. |
-| [`llm.general.content.modification.process.md`](extensions/llm.general.content.modification.process.md) | Governs changes to existing material: establish the baseline, assess necessity and consistency, preserve unrelated work, verify changes, and report evidence. |
-| [`llm.software.documentation.process.md`](extensions/llm.software.documentation.process.md) | Defines a process for writing and maintaining accurate software Markdown documentation, including review-and-fix passes. |
-| [`software.severity.rubric.md`](extensions/software.severity.rubric.md) | Classifies functional, operational, security, and data-protection issues as Critical, Major, or Minor based on credible impact. |
-| [`user.general.clarification.process.md`](extensions/user.general.clarification.process.md) | Supports user-led questions, options, reviews, and decisions while respecting the parent prompt's approval boundaries. |
+| File                                                                                                      | Description                                                                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`llm.general.clarification.process.md`](extensions/llm.general.clarification.process.md)                 | Resolves material uncertainty through focused, one-at-a-time questions while preserving established answers and decisions.                                                                                |
+| [`llm.general.content.modification.process.md`](extensions/llm.general.content.modification.process.md)   | Governs changes to existing material: establish the baseline, assess necessity and consistency, preserve unrelated work, verify changes, and report evidence.                                             |
+| [`llm.software.documentation.process.md`](extensions/llm.software.documentation.process.md)               | Defines a process for writing and maintaining accurate software Markdown documentation, including review-and-fix passes.                                                                                  |
+| [`software.architecture.principles.md`](extensions/software.architecture.principles.md)                   | Defines the software architecture principles that the AI must understand and balance based on its set business outcomes and functional scope. These principles are for software, not agentic development. |
+| [`software.severity.rubric.md`](extensions/software.severity.rubric.md)                                   | Classifies functional, operational, security, and data-protection issues as Critical, Major, or Minor based on credible impact.                                                                           |
+| [`user.general.clarification.process.md`](extensions/user.general.clarification.process.md)               | Supports user-led questions, options, reviews, and decisions while respecting the parent prompt's approval boundaries.                                                                                    |
+| [`windmill.workflow.architecture.principles.md`](extensions/windmill.workflow.architecture.principles.md) | Defines reusable naming, architecture, design, implementation, and maintenance principles for Windmill workflows.                                                                                         |
 
 ### Templates
 
